@@ -1,0 +1,55 @@
+.login{
+	&-form{
+		&-wrap{
+			.card{
+				max-width: 520px;
+				margin: 0 auto;
+				&-title{
+					font-size: 24px;
+					font-weight: 700;
+					margin-bottom: 30px;
+					color: #000;
+				}
+				.form{
+					&-group{
+						margin-bottom: 30px; 
+					}
+				}
+			}
+		}
+		&-options{
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 30px;
+			.forgot-link{
+				a{
+					font-size: 14px;
+					font-weight: 600;
+					color: #828282;
+					text-decoration: none;
+				}
+			}
+		}
+		&-link{
+			margin-top: 30px;
+			p{
+				text-align: center;
+				font-size: 14px;
+				color: #828282;
+				margin-bottom: 0px;
+				a{
+					color: #828282;
+					text-decoration: none;
+					span{
+						transition: all 0.3s ease;
+					}
+					&:hover{
+						span{
+							color: $color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

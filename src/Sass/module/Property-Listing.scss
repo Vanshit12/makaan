@@ -1,0 +1,54 @@
+.property{
+	&-listing{
+		.container-md{
+			@media (max-width: 767px) {
+				padding: 0px 25px;
+				margin: 0 auto;
+			}
+			@media (max-width: 340px) {
+				padding: 0px 20px;
+
+			}
+		}
+		.popular-locations{
+			.section-title{
+				h2{
+					font-size: 26px;
+					letter-spacing: 0px;
+					text-transform: unset;
+				}
+			}
+			.tabs{
+				border: 1px solid #e5e5e5;
+				border-radius: 10px;
+				.nav{
+					padding: 15px 20px;
+					border-bottom: 1px solid #e5e5e5;
+					margin-bottom: 0px;
+				}
+				.tab-content{
+					padding: 25px 30px;
+					.heading{
+						margin-bottom: 25px;
+						h4{
+							margin-bottom: 0px;
+							margin-top: 0px;
+							font-size: 18px;
+							font-weight: 700;
+							letter-spacing: 0;
+						}
+					}
+				}
+			}
+		}
+		.google-ads{
+			img{
+				max-width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	&-list{
+
+	}
+}

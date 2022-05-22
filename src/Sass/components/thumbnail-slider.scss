@@ -1,0 +1,134 @@
+.thumbnail-slider{
+	.image{
+		&-gallery{
+			&-icon {
+				width: 42px;
+				height: 42px;
+				padding: 0px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+				box-shadow: unset; 
+				filter: unset;
+				background-color: rgba(0,0,0,0.50);
+				border: none;
+				svg{
+					width: 80%;
+					height: 80%;
+				}
+				&:hover{
+					color: $color;
+				}
+				&.image-gallery-play-button,
+				&.image-gallery-fullscreen-button{
+					svg{
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+			&-left-nav{
+				left: 30px;
+				@media (max-width: 767px) {
+					left: 15px;
+				}
+				@media (max-width: 475px) {
+					left: 5px;
+				}
+			}
+			&-right-nav{
+				right: 30px;
+				@media (max-width: 767px) {
+					right: 15px;
+				}
+				@media (max-width: 475px) {
+					right: 5px;
+				}
+			}
+			&-slides{
+
+			}
+			&-slide{
+				&-wrapper{
+
+				} 
+			}
+			&-content {
+				.image-gallery-slide{
+					.image-gallery-image{
+						min-height: 530px;
+						max-height: 530px;
+						max-width: 100%;
+						object-fit: contain;
+						width: auto;
+						@media (max-width: 575px) {
+							min-height: 300px;
+							max-height: 300px;
+						}
+					}
+				}
+				&.fullscreen{
+					.image-gallery-slide{
+						height: calc(100vh - 120px);
+						align-items: center;
+						justify-content: center;
+						.image-gallery-image{
+							min-height: unset;
+							max-height: calc(100vh - 80px);
+							max-width: 100%;
+							object-fit: unset;
+							width: auto;
+							flex: 0 0 auto;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+			&-thumbnail{
+				width: 80px;
+				border: none !important;
+				opacity: 0.55;
+				transition: all 0.3s ease;
+				&:hover{
+					border: none;
+					opacity: 1;
+				}
+				&.active{
+					opacity: 1;
+					border: none;
+				}
+				&-inner{
+
+				}
+				&-image{
+					height: 60px;
+					object-fit: cover;
+				}
+				& + .image-gallery-thumbnail{
+					margin-left: 10px;
+				}
+			}
+			&-thumbnails{
+				padding-top: 15px;
+				padding-bottom: 0px;
+				.image{
+					&-gallery{
+						&-thumbnails{
+							&-wrapper{
+
+							}
+							&-container{
+								text-align: left;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}

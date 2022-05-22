@@ -1,0 +1,21 @@
+.pricing-card{
+	&.card{
+		overflow: unset;
+		margin-bottom: 50px; 
+		&:last-child{
+			margin-bottom: 0px;
+		}
+		.badge {
+			bottom: unset;
+			top: 0px;
+			transform: translateY(-50%) skewX(-35deg);
+		}
+		.card{
+			&-body{
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}

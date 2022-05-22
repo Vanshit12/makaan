@@ -1,0 +1,33 @@
+.tabs{
+	.nav {
+		margin-bottom: 30px;
+		&-item{
+			margin-right: 25px;
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+		&-link{
+			border-color: #000;
+			background-color: #fff;
+			color: #000;
+			border: 2px solid #000;
+			border-radius:  10px;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 700;
+			cursor: pointer;
+			&:hover,
+			&.active{
+				color: #000;
+				background-color: $color;
+				border-color: $color;
+			}
+		} 
+	}
+	.tab-content{
+		.btn-location{
+			margin-bottom: 10px;
+		}
+	}
+}

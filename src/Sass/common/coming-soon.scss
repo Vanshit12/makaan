@@ -1,0 +1,20 @@
+.coming-soon{
+	min-height: 350px;
+	height: calc(100vh - 562px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h4{
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		@media (max-width: 1400px) {
+			font-size: 36px;
+		}
+	}
+	p{
+		font-size: 18px;
+		color: #808080;
+	}
+}

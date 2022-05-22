@@ -1,0 +1,206 @@
+.myaccount {
+    &_navbar {
+        width: 250px;
+        flex: 0 0 250px;
+        padding-right: 30px;
+        align-items: flex-start;
+
+        @media (max-width: 1024px) {
+            display: block;
+            margin: 0px 25px;
+            width: 100%;
+            padding: 0px;
+        }
+
+        @media (max-width: 575px) {
+            margin: 0px;
+        }
+    }
+
+    .navbar-toggler {
+        @media (max-width: 1024px) {
+            display: inline-flex;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+            svg {
+                @media (max-width: 767px) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    &_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0px 70px;
+
+        @media (max-width: 1400px) {
+            padding: 30px 0px 60px;
+        }
+
+        &_toggle {
+            display: flex;
+            flex-wrap: wrap;
+
+            .navbar-toggler {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    &_sidebar {
+        align-items: flex-start;
+
+        .navbar-toggler {
+            right: 15px;
+            left: auto;
+            top: 15px;
+
+            @media (max-width: 1024px) {
+                display: inline-flex;
+                margin-bottom: 10px;
+            }
+        }
+
+        .navbar-nav {
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            position: fixed;
+            left: -250px;
+            top: 0px;
+            padding: 25px;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 999;
+            background-color: #fff;
+            transition: left 0.3s ease;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-top: 65px;
+            width: 250px;
+
+            &.show {
+                left: 0px;
+                box-shadow: 0px 0px 25px rgb(0 0 0 / 15%);
+            }
+        }
+
+        .nav-link {
+            color: #999;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 15px;
+            font-weight: 500;
+
+            svg {
+                width: 18px;
+                height: 18px;
+                margin-left: auto;
+                margin-right: 0px;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &.active {
+                background: #ffbb0e;
+                color: #000;
+            }
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &_content {
+        padding-left: 60px;
+        flex: 1 0;
+        border-left: 1px solid #e3e3e3;
+        max-width: calc(100% - 250px);
+
+        @media (max-width: 1400px) {
+            padding-left: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 0px 25px;
+            border: none;
+            max-width: 100%;
+        }
+
+        @media (max-width: 575px) {
+            padding: 0px;
+        }
+    }
+
+    &-head {
+        .myacconut_wrap_toggle {
+            @media (max-width: 1024px) {
+                padding-left: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                min-height: 44px;
+            }
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        margin-bottom: 30px;
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #999;
+        }
+
+        h2 {
+            font-family: "Gelasio", serif;
+            font-weight: 700;
+            margin-bottom: 0px;
+
+            span {
+                font-family: "Open Sans", sans-serif !important;
+                font-size: 14px;
+                color: #808080;
+                font-weight: 400;
+                font-style: italic;
+                &.color{
+                    color: #ff0000;
+                }
+            }
+
+        }
+    }
+}
+
+
+.no-data-message {
+    border: 2px solid #e5e5e5;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        font-size: 14px;
+        color: #999;
+        font-weight: 700;
+    }
+}

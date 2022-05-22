@@ -1,0 +1,49 @@
+.user-profile-page{
+	.profile-photo{
+		margin-bottom: 31px;
+		position: relative;
+		input[type="file"]{
+			position: absolute;
+			z-index: -999;
+			opacity: 0;
+		}
+	}
+	.photo_box{
+		width: 120px;
+		height: 120px;
+		position: relative;
+		cursor: pointer;
+		margin: 0 auto;
+		display: block;
+		.cam-icon{
+			position: absolute;
+			top: calc(100% - 6px);
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 38px;
+			height: 38px;
+			background-color: $color;
+			border-radius: 50%;
+			border: 2px solid #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			svg{
+				width: 20px;
+				height: 20px;
+				
+			}
+		}
+		.img-wrap{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
