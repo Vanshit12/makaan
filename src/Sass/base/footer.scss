@@ -1,0 +1,273 @@
+.main-footer{
+	padding-top: 80px;
+	background-color: #fff;
+	@media (max-width: 767px) {
+		padding-top: 30px;
+		
+	}
+	.beta{
+		position: fixed;
+		top: 50%;
+		left: 0px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		min-height: 42px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: all 0.3s ease;
+		background-color: transparent;
+		border-bottom: 0px;
+		transition: all 0.3s ease;
+		transform-origin: right;
+		pointer-events: none;
+		z-index: 99;
+	    transform: translate(0px, -50%);
+		img{
+			width: 60px;
+			@media (max-width: 575px) {
+				width: 50px;
+			}
+		}
+	}
+	.footer{
+		&-col{
+			margin-bottom: 30px;
+			&.footer-about{
+				@media (min-width: 768px) {
+					padding-right: 30px;
+				}
+				img{
+					max-width: 160px;
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				p{
+					font-size: 15px;
+					font-weight: 500;
+					color: #999999;
+					a{
+						text-decoration: none;
+						color: $color;
+						font-style: italic;
+					}
+
+				}
+
+			}
+			&.last{
+				@media (max-width: 767px) {
+					margin-bottom: 0px;
+				}
+			}
+			.title{
+				font-size: 20px;
+				color: #000;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				@media (max-width: 1400px) {
+					font-size: 18px;
+					
+				}
+				@media (max-width: 475px) {
+					font-size: 16px;
+				}
+			}
+			.address{
+				&-group{
+					&-item{
+						margin-bottom: 10px;
+						p{
+							margin-bottom: 0px;
+							br{
+
+								@media (max-width: 767px) {
+									display: none
+								}
+								
+							}
+						}
+					}	
+				}
+				&-link{
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-start;
+					line-height: 36px;
+					color: #828282;
+					text-decoration: none;
+					font-weight: 600;
+					a{
+						line-height: 36px;
+						color: #828282;
+						text-decoration: none;
+						font-weight: 600;
+						@media (max-width: 1400px) {
+							font-size: 14px;
+							line-height: 32px;
+						}
+						@media (max-width: 767px) {
+							line-height: 28px;
+
+						}
+					}
+					@media (max-width: 1400px) {
+						font-size: 14px;
+						line-height: 32px;
+					}
+					@media (max-width: 767px) {
+						line-height: 28px;
+
+					}
+					svg{
+						margin-top: 6px;
+						margin-right: 10px;
+						@media (max-width: 1400px) {
+							margin-top: 3px;
+							
+						}
+					}
+				}
+			}
+			.social{
+				.list{
+					&-group{
+						flex-wrap: wrap;
+						&-item{
+							margin-right: 10px;
+							margin-bottom: 10px;
+							@media (max-width: 1200px) {
+								margin-right: 5px;
+								margin-bottom: 5px;
+
+							}
+							&:last-child{
+								margin-right: 0px;
+							}
+							img{
+								@media (max-width: 1200px) {
+									width: 32px;
+								}
+							}
+						}
+					}
+				}
+				&-2{
+					.list{
+						&-group{
+							@media (min-width: 768px) {
+								max-width: 165px;
+							}
+							&-item{
+
+							}
+						} 
+					}
+
+				}
+			}
+			.list{
+				&-group{
+					&-item{
+						.nav-link{
+							line-height: 36px;
+							font-size: 15px;
+							font-weight: 600;
+							color: #828282;
+							display: inline-block;
+							@media (max-width: 1400px) {
+								font-size: 14px;
+								line-height: 32px;
+								
+							}
+							@media (max-width: 767px) {
+								line-height: 28px;
+
+							}
+							&:hover{
+								color: $color;
+							}
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+	.copy-right{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 1px solid #e3e3e3;
+		margin-top: 25px;
+		@media (max-width: 767px) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			
+		}
+		p{
+			margin-bottom: 0;
+			font-size: 14px;
+			color: #b4b4b4;
+			font-weight: 400;
+			@media (max-width: 767px) {
+				text-align: center;
+				margin-bottom: 12px;
+			}
+			@media (max-width: 360px) {
+				font-size: 12px;
+			}
+		}
+		.container-lg{
+			@media (max-width: 991px) {
+				padding: 0px 30px;
+			}
+			@media (max-width: 380px) {
+				padding: 0px 15px;
+
+			}
+		}
+		.links{
+			@media (max-width: 767px) {
+				justify-content: center;
+			}
+			.list-group{
+
+				&-item{
+					padding: 0px 15px; 
+					border-right: 1px solid #b4b4b4;
+					@media (max-width: 767px) {
+						
+					}
+					@media (max-width: 380px) {
+						padding: 0px 8px;
+					}
+
+					
+					&:first-child{
+						padding-left: 0px;
+					}
+					&:last-child{
+						border: none;
+						padding-right: 0px;
+					}
+					a{
+						display: block;
+						line-height: 16px;
+						color: #b4b4b4;
+						font-size: 14px;
+						font-weight: 400;
+						text-decoration: none;
+						@media (max-width: 340px) {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

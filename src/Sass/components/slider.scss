@@ -1,0 +1,102 @@
+
+.slider{
+	position: relative;
+	.slick{
+		&-list{
+			width: calc(100% - 100px);
+			margin: 0 auto;
+			overflow: unset;
+			@media (min-width: 575px) {
+				max-width: 540px;
+				width: 100%;
+			}
+			@media (min-width: 768px) {
+				max-width: 720px;
+
+			}
+			@media (min-width: 992px) {
+				max-width: 960px;
+
+			}
+			@media (min-width: 1200px) {
+				max-width: 1140px;
+			}
+			@media (min-width: 1400px) {
+				max-width: 1320px;
+
+			}
+			@media (min-width: 1560px) {
+				max-width: 1440px;
+			}
+			@media (max-width: 767px) {
+				margin-left: 8px;
+			}
+			
+			.slick-track{
+				display: flex;
+				float: none;
+				min-width: 100%;
+				.slick-slide{
+					height: auto;
+					& > div{
+						height: 100%;
+						.slider-item{
+							height: 100%;
+							.card{
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-dots{
+			bottom: 0px;
+			li{
+				margin: 0px;
+				width: 16px;
+				height: 16px;
+				button{
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+	.slick-prev,
+	.slick-next{
+		top: -75px;
+		right: calc(12% + 15px);
+		left: auto;
+		width: 42px;
+		height: 42px;
+		color: #000;
+		@media (max-width: 1400px) {
+			top: -45px;
+		}
+		@media (max-width: 1024px) {
+			display: none;
+		}
+		&::before{
+			display: none;
+		}
+		&:focus,
+		&:hover{
+			color: #000;
+			transform: translate(0, -50%) !important; 
+
+		}
+	}
+	.slick-prev{
+		right: calc(12% + 70px);
+	}
+	&-item{
+		padding: 0px 15px;
+		@media (max-width: 1600px) {
+			padding: 0px 10px;
+		}
+		@media (max-width: 767px) {
+			padding: 0px 7px;
+		}
+	}
+}

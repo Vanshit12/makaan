@@ -1,0 +1,45 @@
+.whatsapp-form{
+	.section{
+		&-title{
+			.heading-2{
+				max-width: 1060px;
+				margin: 0 auto;;
+				font-size: 32px;
+				text-align: center;
+				@media (max-width: 1600px) {
+					font-size: 30px;
+					
+				}
+				@media (max-width: 1400px) {
+					font-size: 28px;
+
+				}
+				@media (max-width: 767px) {
+					font-size: 24px;
+					letter-spacing: unset;
+
+				}
+				br{
+
+					@media (max-width: 992px) {
+						display: none;
+					}
+				}
+			}
+		}
+
+	}
+	.search_card{
+		@media (max-width: 767px) {
+			padding: 20px 25px;
+		}
+		.btn_wrap {
+			.btn{
+				@media (max-width: 475px) {
+					display: flex;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

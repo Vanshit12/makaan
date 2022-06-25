@@ -1,0 +1,56 @@
+.modal{
+	&-content{
+		border-radius: 10px;
+	}
+
+	&-header{
+		padding: 40px 40px 0px;
+		background-color: #fff;
+		border:none;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		position: relative;
+
+		.modal-title{
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.btn{
+			&-close{
+				position: absolute;
+				top: 30px;
+				right: 40px;
+				color: $color;
+				background-size: 14px;
+				&:focus{
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	&-body{
+		padding: 40px 50px;
+		@media (max-width: 767px) {
+			padding: 20px 25px;
+		}
+	}
+	&-footer{
+		padding: 0px 40px 40px;
+		padding-top: 0px;
+		border-top: none;
+		.btn{
+			margin: 0px;
+			margin-left: 15px;
+			min-height: 42px;
+			&:first-child{
+				margin-left: 0px;
+			}
+			&-transparent{
+				text-transform: uppercase;
+			}
+		}
+	}
+	&.contact-modal{
+
+	}
+}

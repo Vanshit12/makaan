@@ -1,0 +1,60 @@
+// Default Bootstrap Scss
+@import "~bootstrap/scss/bootstrap";
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+// Base Style Files Scss
+@import "variables";
+@import "base/layout";
+@import "base/header";
+@import "base/footer";
+
+// Components Style Files Scss
+@import "components/form";
+@import "components/button";
+@import "components/dropdown";
+@import "components/section";
+@import "components/card";
+@import "components/tabs";
+@import "components/list-group";
+@import "components/slider";
+@import "components/breadcrums";
+@import "components/thumbnail-slider";
+@import "components/notification-listing";
+@import "components/modal";
+@import "components/contact-list";
+@import "components/table";
+@import "components/pagination";
+@import "components/loader";
+
+// Website Components Style Files Scss
+@import "common/blog-card";
+@import "common/property-card";
+@import "common/property-list-card";
+@import "common/testimonial-card";
+@import "common/whatsapp-section";
+@import "common/logo-card";
+@import "common/announcement-bar";
+@import "common/features-icons";
+@import "common/strip-list";
+@import "common/coming-soon";
+@import "common/mobile-app-section";
+@import "common/contact-form";
+
+
+// Module Style Files Scss
+@import "module/home";
+@import "module/Login-Register";
+@import "module/Add-Property";
+@import "module/Property-Listing";
+@import "module/Single-Property";
+@import "module/myaccount";
+@import "module/user-profile";
+@import "module/customer-services";
+@import "module/Pricing-listing";
+@import "module/jobs";
+@import "module/about-us";
+@import "module/blog-detail";
+@import "module/content-page";
+
+// Bootstrap Custom Scss
+@import "custom";

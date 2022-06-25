@@ -1,0 +1,49 @@
+.customer-services{
+	.action-card{
+		&.card{
+			margin-bottom: 21px;
+			.card{
+				&-body{
+					padding: 30px;
+
+					@media (max-width: 992px) {
+						padding: 20px;
+						
+					}
+					@media (max-width: 767px) {
+						text-align: center;
+					}
+					p{
+						margin-bottom: 0px;
+						&.label{
+							font-size: 14px;
+							font-weight: 600;
+							margin-bottom: 10px;
+							color: #828282;
+							
+						}
+					}
+					h3{
+						font-size: 28px;
+						font-weight: 700;
+						@media (max-width: 992px) {
+							font-size: 24px;
+						}
+						
+					}
+					.btn{
+						min-height: 46px;
+						@media (max-width: 992px) {
+							padding: 0px 10px;
+							font-size: 13px;
+						}
+						svg{
+							width: 24px;
+							height: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

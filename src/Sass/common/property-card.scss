@@ -1,0 +1,133 @@
+.property-card {
+  &.card {
+    position: relative;
+    @media (max-width: 475px) {
+      margin-bottom: 20px;
+    }
+
+    .image-wrap {
+      position: relative;
+      padding-top: 48%;
+      .layout {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 0px;
+        &-1 {
+          grid-template-areas: "big-block";
+        }
+        &-2 {
+          grid-template-areas: "big-block small-block";
+          gap: 5px;
+        }
+        &-3 {
+          grid-template-areas:
+            "big-block big-block small-block"
+            "big-block big-block small-block-2";
+          gap: 5px;
+        }
+        .img {
+          height: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          &-1 {
+            grid-area: big-block;
+          }
+          &-2 {
+            grid-area: small-block;
+          }
+          &-3 {
+            grid-area: small-block-2;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .badge {
+      height: 48px;
+      border-radius: 0px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: $font-2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 25px;
+      padding-right: 25px;
+      position: absolute;
+      bottom: 0px;
+      left: 55px;
+      transform: translateY(50%) skewX(-35deg);
+      @media (max-width: 1600px) {
+        height: 42px;
+        left: 45px;
+        font-size: 16px;
+      }
+      @media (max-width: 1600px) {
+        left: 35px;
+      }
+      @media (max-width: 1000px) {
+        left: 25px;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: translateY(50%) skewX(-25deg);
+      }
+      @media (max-width: 475px) {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 34px;
+        left: 15px;
+      }
+      span {
+        transform: skewX(35deg);
+        @media (max-width: 1000px) {
+          transform: skewX(25deg);
+        }
+      }
+      &.bg-primary {
+        color: #000;
+        background-color: $color !important;
+        border: 2px solid #fff;
+      }
+    }
+
+    .card {
+      &-body {
+        position: unset;
+        @media (max-width: 1000px) {
+          padding: 35px 25px 25px;
+        }
+        @media (max-width: 475px) {
+          padding: 30px 20px 20px;
+        }
+      }
+      &-text {
+        margin-bottom: 0px;
+      }
+      &-link {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        color: transparent;
+      }
+    }
+  }
+}

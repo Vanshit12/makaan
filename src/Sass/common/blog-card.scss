@@ -1,0 +1,60 @@
+.blog-card {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 30px;
+  height: calc(100% - 30px);
+  @media (min-width: 992px) {
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .card {
+    &-title {
+      font-size: 18px;
+      line-height: 22px;
+      @media (max-width: 1600px) {
+        font-size: 16px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 15px;
+        line-height: normal;
+      }
+    }
+    &-text {
+      @media (max-width: 1400px) {
+        font-size: 13px;
+        line-height: normal;
+      }
+    }
+    &-body {
+      padding: 18px 0px 65px;
+      position: unset;
+      @media (max-width: 1400px) {
+        padding: 15px 0px 55px;
+      }
+    }
+    &-action {
+      padding: inherit;
+      padding-bottom: 0px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+    }
+  }
+  &.card {
+    .image-wrap {
+      position: relative;
+      padding-top: 68%;
+      img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

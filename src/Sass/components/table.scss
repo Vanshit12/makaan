@@ -1,0 +1,64 @@
+.table{
+	thead{
+		tr{
+			vertical-align: middle;
+			th{
+				white-space: nowrap;
+				padding: 10px 15px;
+				padding-right: 30px;
+				background-color: #e3e3e3;
+				.icon{
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 5px;
+					transform: translate(0%,-50%);
+					svg{
+						width: 14px;
+						height: 14px;
+					}
+				}
+
+			}
+		}
+	}
+	thead,
+	tbody{
+		tr{
+			th,  
+			td{
+				font-size: 14px;
+				position: relative;
+
+			}
+		}
+	}
+	tbody{
+		border-top: none !important;
+		tr{
+			&:first-child{
+
+			}
+			td{
+				.inner-data{
+					display: block;
+					max-width: 200px;
+					white-space: normal;
+					.dropdown{
+						.dropdown-menu{
+							padding: 20px;
+							.dropdown-item{
+								font-size: 14px;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&-overflow{
+		overflow: auto;
+		max-width: 100%; 
+	}
+}
